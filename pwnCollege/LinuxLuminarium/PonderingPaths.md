@@ -4,7 +4,7 @@
 
 *Executing the **pwn** program using the absolute file path from the root gives the flag*
 
-**Command used:**
+**Solution:**
 
 `/pwn`
 
@@ -12,7 +12,7 @@
 
 *Executing the **run** program located in the **challenge** directory which itself is located in the home directory gives the flag. To be noted that `cd challenge` did not work*
 
-**Command used:**
+**Solution:**
 
 `/challenge/run`
 
@@ -64,7 +64,7 @@ Necessary to to use the full path*
 
 ## 7. Explicit relative paths, from /
 
-*`challenge/run` from **/** lets us know that we need to start with `./` which really is redundant and does not change the effect of the command, so `./challenge/run` works the same, giving the flag.*
+*`challenge/run` from **/** lets us know that we need to start with `./` which really is redundant(in this scenario) and does not change the effect of the command, so `./challenge/run` works the same, giving the flag.*
 
 **Solution:**
 
