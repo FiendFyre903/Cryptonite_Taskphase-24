@@ -1,4 +1,4 @@
-# Hello Hackerss
+# Hello Hackers
 
 ## 1. Intro to Commands
 
