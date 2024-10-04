@@ -2,8 +2,8 @@
 
 ## 1. Redirecting Output
 
-*This level requires us to redirect a string ouput of a command into a file using `>`. WARNING - this replaces any existing data in the file.*<br>
-*`echo` is a simple command that takes a string argument and outputs the exact same string. We use this command to easily get the string output we want, which is `PWN`. *
+This level requires us to redirect a string ouput of a command into a file using `>`. WARNING - this replaces any existing data in the file.*<br>
+*`echo` is a simple command that takes a string argument and outputs the exact same string. We use this command to easily get the string output we want, which is `PWN`. 
 
 **NOTE:**
 
@@ -23,21 +23,21 @@
 
 ## 2. Redirecting more output
 
-*In this level we redirect the output of `/challenge/run` into the **myflag** file. HOWEVER, only the **stdout** <u>stream</u> of the output is redirected to the file. The **stderror** <u>stream</u> is printed onto the terminal because by default, `>` only redirects **stdout** <u>stream.</u>*
+In this level we redirect the output of `/challenge/run` into the **myflag** file. HOWEVER, only the **stdout** <u>stream</u> of the output is redirected to the file. The **stderror** <u>stream</u> is printed onto the terminal because by default, `>` only redirects **stdout** <u>stream.</u>
 
 **Solution:**
 ![alt text](image-7.png)
 
 ## 3. Appending Output
 
-*`>>` appends the commands output to the file instead of replacing the file's pre-existing data*
+`>>` appends the commands output to the file instead of replacing the file's pre-existing data
 
 **Solution:**
 ![alt text](image-8.png)
 
 ## 4. Redirecting Errors
 
-*We can redirect the different output streams of a command to multiple files in the same line. It supports ONE input and MULTIPLE outputs. The same stream cant be redirected to multiple files*
+We can redirect the different output streams of a command to multiple files in the same line. It supports ONE input and MULTIPLE outputs. The same stream cant be redirected to multiple files
 
 **NOTE:**
 
@@ -57,7 +57,7 @@ Equivalent redirection operators:-
 
 ## 5. Redirecting input
 
-*This level has two steps. Step 1 requires us to use the `touch` command or redirect the word **CHALLENGE** into the **PWN** file. Step 2 requires us to redirect the files contents as the input of `/challenge/run` command. Doing this correctly gives the flag.*
+This level has two steps. Step 1 requires us to use the `touch` command or redirect the word **CHALLENGE** into the **PWN** file. Step 2 requires us to redirect the files contents as the input of `/challenge/run` command. Doing this correctly gives the flag.
 
 **Solution:**
 ![alt text](image-10.png)
@@ -92,21 +92,21 @@ In this level we learn about the `>&` operator, which redirects a file-descripto
 
 ## 9. Duplicating piped data with tee
 
-*In this level we took the two outputs of `tee`, one of them being **stdout**, and one being a redirect to a file. The **stdout** gets **piped** further into the next command. `cat` ing the file where `tee` redirected the output of the previous command to gives us the instructions needed to run the final command to get the flag. *
+In this level we took the two outputs of `tee`, one of them being **stdout**, and one being a redirect to a file. The **stdout** gets **piped** further into the next command. `cat` ing the file where `tee` redirected the output of the previous command to gives us the instructions needed to run the final command to get the flag. 
 
 **Solution:**
 ![alt text](image-14.png)
 
 ## 10. Writing to multiple programs
 
-*This level teaches us the Linux ideology that **everything is a file**. It shows us a way to use the redirect operator in a similar manner to piping, a process called <u>**Process Substitution**</u>.*
+This level teaches us the Linux ideology that **everything is a file**. It shows us a way to use the redirect operator in a similar manner to piping, a process called <u>**Process Substitution**</u>.
 
 **Solution:**
 ![alt text](image-15.png)
 
 ## 11. Split-piping stderr and stdout
 
-*After a few tries, I realised the trick was to simply redirect the diff file-descriptors without converting stderr to stdout to the respective commands.*
+After a few tries, I realised the trick was to simply redirect the diff file-descriptors without converting stderr to stdout to the respective commands.
 
 **Solution:**
 
