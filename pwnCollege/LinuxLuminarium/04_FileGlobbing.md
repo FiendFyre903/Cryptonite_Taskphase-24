@@ -6,7 +6,7 @@
 *In this level, `/ch*` keeps with the limit of 4 characters and can match the required directory `challenge` because * is a wildcard that can be subtituted by any number of characters.*
 
 **Solution:**
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## 2. Matching with ?
 
@@ -14,7 +14,7 @@
 
 **Solution:**
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## 3. Matching with []
 
@@ -22,7 +22,7 @@
 
 **Solution:**
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ## 4. Matching paths with []
 
@@ -30,18 +30,18 @@
 
 **Solution:**
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ## 5. Matching globs
 
 *After a few tries with different combinations of special characters, i used ls(i should have in the start) and realised that every file has a different starting letter. So to match the files i wanted, i used square bracket to specify that starting character must match `c`,`e` or `p`, and put a `*` at the end to represent the rest of the name. This gave the flag.*
 
 **Solution:**
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ## 6. Exclusionary globbing
 
 *Using the `!` speical character to reverse the effect of the square brackets, so instead of matching files that contain the characters **p,w,n**  it instead matches all files that didnt start with p,w,n.*
 
 **Solution:**
-![alt text](image-5.png)
+![alt text](images/image-5.png)

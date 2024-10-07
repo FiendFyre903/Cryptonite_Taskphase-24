@@ -18,7 +18,7 @@ This level requires us to redirect a string ouput of a command into a file using
 <br>
 
 **Solution:**
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 ## 2. Redirecting more output
@@ -26,14 +26,14 @@ This level requires us to redirect a string ouput of a command into a file using
 In this level we redirect the output of `/challenge/run` into the **myflag** file. HOWEVER, only the **stdout** <u>stream</u> of the output is redirected to the file. The **stderror** <u>stream</u> is printed onto the terminal because by default, `>` only redirects **stdout** <u>stream.</u>
 
 **Solution:**
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ## 3. Appending Output
 
 `>>` appends the commands output to the file instead of replacing the file's pre-existing data
 
 **Solution:**
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ## 4. Redirecting Errors
 
@@ -53,14 +53,14 @@ Equivalent redirection operators:-
 3. stderr - `2>`
 
 **Solution:**
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 ## 5. Redirecting input
 
 This level has two steps. Step 1 requires us to use the `touch` command or redirect the word **CHALLENGE** into the **PWN** file. Step 2 requires us to redirect the files contents as the input of `/challenge/run` command. Doing this correctly gives the flag.
 
 **Solution:**
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 ## 6. Grepping Stored Results
 
@@ -70,7 +70,7 @@ This level has two steps. Step 1 requires us to use the `touch` command or redir
 
 ```/challenge/run > /tmp/data.txt```<br>
 ```grep pwn.college /tmp/data.txt```
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
 ## 7. Grepping Live Output
 
@@ -79,7 +79,7 @@ This level has two steps. Step 1 requires us to use the `touch` command or redir
 **Solution:**
 
 ```/challenge/run | grep pwn.college```
-![alt text](image-12.png)
+![alt text](images/image-12.png)
 
 ## 8. Grepping errors
 
@@ -88,21 +88,21 @@ In this level we learn about the `>&` operator, which redirects a file-descripto
 **Solution:**
 
 ```/challenge/run 2>&1 | grep pwn.college```
-![alt text](image-13.png)
+![alt text](images/image-13.png)
 
 ## 9. Duplicating piped data with tee
 
 In this level we took the two outputs of `tee`, one of them being **stdout**, and one being a redirect to a file. The **stdout** gets **piped** further into the next command. `cat` ing the file where `tee` redirected the output of the previous command to gives us the instructions needed to run the final command to get the flag. 
 
 **Solution:**
-![alt text](image-14.png)
+![alt text](images/image-14.png)
 
 ## 10. Writing to multiple programs
 
 This level teaches us the Linux ideology that **everything is a file**. It shows us a way to use the redirect operator in a similar manner to piping, a process called <u>**Process Substitution**</u>.
 
 **Solution:**
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 
 ## 11. Split-piping stderr and stdout
 
@@ -113,5 +113,5 @@ After a few tries, I realised the trick was to simply redirect the diff file-des
 ```/challenge/hack > >(/challenge/planet) 2> >(/challenge/the)```
 <br>OR <br>
 ```/challenge/hack 2> >(/challenge/the) | /challenge/planet```
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 

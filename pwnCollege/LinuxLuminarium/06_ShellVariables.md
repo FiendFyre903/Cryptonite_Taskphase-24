@@ -7,14 +7,14 @@ This module introduces us to shell scripting and shell variables in particular. 
 `echo $var_name` prints the value contained in the variable named var_name onto the terminal.
 
 **Solution:**
-![alt text](image-17.png)
+![alt text](images/image-17.png)
 
 ## 2. Setting Variables
 
 Variables can be set using the format `VAR=value` with no spaces anywhere. Variables and their values are case sensitiive.
 
 **Solution:**
-![alt text](image-18.png)
+![alt text](images/image-18.png)
 
 ## 3. Multi-word variables
 
@@ -22,27 +22,27 @@ Variables with a value of multiple words (i.e. having spaces in it) can be repre
 ex. `VAR="word1 word2 word3"`
 
 **Solution:**
-![alt text](image-19.png)
+![alt text](images/image-19.png)
 
 ## 4. Exporting Variables
 
 `export VAR` makes the variable VAR available for use/accesible by other commands. By default a variable is not an environment variable.
 
-![alt text](image-20.png)
+![alt text](images/image-20.png)
 
 ## 5. Printing Exported Variables
 
 `env` prints every environment variable and their value. using piping and `grep` we can find the flag from the output of `env`.
 
 **Solution:**
-![alt text](image-21.png)
+![alt text](images/image-21.png)
 
 ## 6. Storing Command Output
 
 we can use the format `VAR=$(some_command)` to store the output of `some_command` to the variable VAR.
 
 **Solution:**
-![alt text](image-22.png)
+![alt text](images/image-22.png)
 
 ## 7. Reading Input
 
@@ -51,7 +51,7 @@ we can use the format `VAR=$(some_command)` to store the output of `some_command
 `read -p "Prompt_here" VAR_NAME`
 
 **Solution:**
-![alt text](image-23.png)
+![alt text](images/image-23.png)
 
 ## 8. Reading Files
 
@@ -60,4 +60,4 @@ The `read` command can also be used to read entire files into a variable using t
 `read VAR_NAME < File`
 
 **Solution:**
-![alt text](image-24.png)
+![alt text](images/image-24.png)

@@ -16,14 +16,14 @@ Each one of them can have a combination of read, write, execute privileges or co
 `chown user_name file_path`
 
 **Solution:**
-![alt text](image-34.png)
+![alt text](images/image-34.png)
 
 ## 2. Groups and Files
 
 `chgrp` changes the group that owns a file.
 
 **Solution:**
-![alt text](image-35.png)
+![alt text](images/image-35.png)
 
 
 ## 3. Fun with Group names
@@ -31,7 +31,7 @@ Each one of them can have a combination of read, write, execute privileges or co
 The `id` command tells the user who invoked it what **groups** they are part of along with their **userid (UID)** as well as **groupid (GID)** for each group.
 
 **Solution:**
-![alt text](image-36.png)
+![alt text](images/image-36.png)
 
 ## 4. Changing Permissions
 
@@ -45,14 +45,14 @@ The `chmod` command can change the permissions the user/group/other has for a fi
 4. `-` - nothing 
 
 **Solution:**
-![alt text](image-37.png)
+![alt text](images/image-37.png)
 
 ## 5. Executable files.
 
 Same as the previous level, except this time we are changing the permission of an executable file to make it executable by all.
 
 **Solution:**
-![alt text](image-38.png)
+![alt text](images/image-38.png)
 
 ## 6. Permission Tweaking Practice
 
@@ -74,4 +74,4 @@ The **SUID** (Set User Id) bit makes it so that no matter which user executes th
 
 We can set the **SUID** bit using `chmod` as shown in the solution below.
 
-![alt text](image-39.png)
+![alt text](images/image-39.png)

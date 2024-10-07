@@ -27,14 +27,14 @@ Some parameters displayed by both commands:-
 
 **Solution:**
 
-![alt text](image-25.png)
+![alt text](images/image-25.png)
 
 ## 2. Killing Processes
 
 The `kill` command takes a number as an argument and kills the process that has a PID matching said integer. The way `kill` command works is, it does not instantly terminate the process but allows some final actions to complete before terminating.
 
 **Solution:**
-![alt text](image-26.png)
+![alt text](images/image-26.png)
 
 ## 3. Interupting processes
 
@@ -42,14 +42,14 @@ There are some `control characters` that are key-combinations that when pressed,
 `Ctrl + c` interupts whatever process is running and ends it immediately.
 
 **Solution:**
-![alt text](image-27.png)
+![alt text](images/image-27.png)
 
 ## 4. Suspending Processes
 
 `Ctrl + Z` suspends a process without terminating it. Multiple instances of a process can run at the same time.
 
 **Solution:**
-![alt text](image-28.png)
+![alt text](images/image-28.png)
 
 ## 5. Resuming Processes
 
@@ -57,7 +57,7 @@ The `fg` command resumes any suspended process in the foreground. <br>
 Suspended processes do not show up in `ps` (when no options are given)
 
 **Solution:**
-![alt text](image-29.png)
+![alt text](images/image-29.png)
 
 ## 6. Backgrounding Processes
 
@@ -67,21 +67,21 @@ Foreground - running directly in the terminal, therefore we cant use the termina
 Background - running but allowing us to use our terminal normally.
 
 **Solution:**
-![alt text](image-30.png)
+![alt text](images/image-30.png)
 
 ## 7. Foregrounding Processes
 
 The `fg` command also brings any process running in the background to the foreground.
 
 **Solution:**
-![alt text](image-31.png)
+![alt text](images/image-31.png)
 
 ## 8. Starting background processes
 
 Adding an `&` after a command starts it running in the background, without having to **suspend** it and then use the `bg` command.
 
 **Solution:**
-![alt text](image-32.png)
+![alt text](images/mage-32.png)
 
 ## 9. Process Exit Codes
 
@@ -92,5 +92,5 @@ The exit code of the most recent process is stored in a variable `?`
 `echo $?` gives us the value of `?`,i.e. the last exit code.
 
 **Solution:**
-![alt text](image-33.png)
+![alt text](images/image-33.png)
 
