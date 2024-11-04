@@ -12,7 +12,7 @@
 
     Aim is to reverse whatever the encrypt script does.
     
-    It is a substitution cipher. The study guide is a huge set of words to help crack the cipher.
+    It is a substitution cipher. The study guide is a set of words to help crack the cipher.
 
 - **step 2**
 
