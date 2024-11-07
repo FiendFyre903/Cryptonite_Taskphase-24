@@ -6,7 +6,7 @@
 
     This challenge gave us the value for `p+q` as well as `p*q`. This can be easily solved using the quadratic formula, or in this case, I used sympy's solver to solve it.
 
-    Another difference was, instead of using Euler's Totient, instead a variable `m` qas being used in its place, whose value was the LCM of `p-1` and `q-1`. 
+    Another difference was, instead of using Euler's Totient, instead a variable `m` was being used in its place, whose value was the LCM of `p-1` and `q-1`. 
 
     ```python
     from Crypto.Util.number import bytes_to_long, long_to_bytes
@@ -52,6 +52,6 @@
 
 - I first tried using quadratic formula to solve but ran into an error - `OverflowError: int too large to convert to float` as the integer value was too high. 
 
-References
+**References**
 
 - https://docs.sympy.org/latest/modules/solvers/solvers.html
