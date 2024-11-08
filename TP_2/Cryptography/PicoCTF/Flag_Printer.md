@@ -84,7 +84,7 @@
 
     This gave me a bmp file which i opened using GIMP
 
-    ![alt text](/_images/image8.png)
+    ![alt text](../../_images/image8.png)
 
 
 **What I learned:**
