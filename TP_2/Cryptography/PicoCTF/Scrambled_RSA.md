@@ -45,8 +45,6 @@
                 print(df)
                 break
     ```
-    
-
 
 **What I learned:**
 
@@ -55,6 +53,8 @@
 **Other incorrect methods I tried:**
 
 - Lots of random attempts with differnt combinations to try and find a pattern, but no success except for the one used to find the answer.
+
+- Tried to use string module to create the string of characters that was used as reference, but it included more than i needed, so i limited it to just the necessary characters and manually wrote them in the order that made it fastest 
 
 **References**
 
