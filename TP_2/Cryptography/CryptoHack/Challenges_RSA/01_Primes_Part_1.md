@@ -136,6 +136,7 @@
 **Flag:**  `crypto{700_m4ny_5m4ll_f4c70r5}`
 
 - **step 1**
+
     I used the sage to find all the factors of N, then used the general formula or Eulers Totient.
     After that it was the same steps as previous questions.
 
