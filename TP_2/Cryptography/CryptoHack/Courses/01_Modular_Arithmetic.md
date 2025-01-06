@@ -133,3 +133,33 @@ def root(num,p):
     return [x,(-x)%p]
 ```
 
+## CRT
+
+### Code
+
+```python
+ls = [[2,5],[3,11],[5,17]]
+prod = 1
+N = []
+inv = []
+
+for x in ls: 
+    prod*=x[1]
+
+print(prod)
+    
+for x in ls:
+    N.append(prod//x[1])
+
+print(N)
+
+for i in range(len(N)):
+    inv.append(pow(N[i],-1,ls[i][1]))
+
+a = 0
+
+for i in range(len(N)):
+    a = a + ls[i][0] * N[i] * inv[i]
+
+print(a%prod)
+```
